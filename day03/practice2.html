@@ -1,35 +1,88 @@
- <!DOCTYPE html>
- <html>
- <head>
+<!DOCTYPE html>
+<html>
+
+<head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-  
- </head>
- <body>
-    <p> 카테고리 <select>
-        
-        <option>공지사항</option>
-         </select>
-         </p>
-    <input type="txet" placeholder="작성자"/> <input type="text" placeholder="비밀번호"/>
-    <hr/>
-    <input type="text" placeholder="게시물 제목 입력"/>
-    <hr/>
-    <textarea cols="50" rows="10" placeholder="게시물 내용입력"></textarea> <br/>
-    공개선택 <input type="radio" name="1"/>공개글 <input type="radio" name="1"/>비공개글 <br/>
-    공유선택 
-        <input type="checkbox" />카카오톡 <input type="checkbox"/>트위터  <input type="checkbox"/>네이버카페 <br/>
-    
-    작성일자 <input type="date"/> 작성시간 <input type="time"/>
-    <hr/>
-    첨부파일 <input type="file" /> <br/><br/>
 
+</head>
 
-    <button type="button"> 목록보기 </button> <button type="button"> 글쓰기 </button> <button type="button"> 다시쓰기 </button>
+<body>
+    <h1>달력 만들기</h1> <br />
+    <table>
+        <tr>
+            <td>
+                <button type="button"> < </button>
+                <input type="month" />
+                <button type="button"> > </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1"> <!-- 달력 크기가 위에 버튼 크기랑 맞춰지지가 않습니다 ㅠ 잘 모르겠습니다-->
+                    <!-- style="border-collapse : collapse;" 처음에 이 부분까지 다 같이 썼다가 칸들이 붙어 있어서, 이 부분을 삭제하니까 제대로 나왔음. -->
+                    <tr>
+                        <th colspan="7">2023년 1월</th>
+                    </tr>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
 
-    
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
- </body>
- </html>
+    </table>
+
+</body>
+
+</html>
