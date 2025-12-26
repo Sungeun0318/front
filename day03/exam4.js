@@ -76,6 +76,10 @@ document.write(`<h3>${result9}</h3>`); */
 
 
 // [지문9] 두 사람의 이름을 prompt함수로 각 입력받아서 만일 이름이 '유재석' 이면 뒤에 (방장) 이라고 이름 뒤에 붙이고 아니면 생략한다.  HTML의 <ol> 에 결과를 출력하시오.
-
+let name = prompt("이름 : ");
+let name2 = prompt("이름2 : ");
+let result10 = name == "유재석"?  `${name}(방장)` : `${nmae}`;
+let result11 = name2 == "유재석"? `${name2}(방장)` : `${name2}`;
+document.write(`<ol>${result10}, ${result11}</ol>`);
 
 

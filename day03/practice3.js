@@ -15,4 +15,40 @@ console.log(`result3 : ${2025-m}`); */
 
 
 //문제 4번
+/* let cm = Number(prompt("키 : "));
+let kg = Number(prompt("몸무게 : "));
+console.log(`result4 : ${kg/((cm/100)*(cm/100))}`); */
 
+//문제 5번
+/* let id = prompt("id : ");
+let email = prompt(" email : ");
+let result5 = id == "admin"? `${id}(관리자)` : `${id}(일반사용자)`;
+let result6 = email == "email@test.com"? `${email}(관리자)` : `${email}(일반사용자)`;
+console.log(`result5 : ${result5}, ${result6}`); */
+
+//문제 6번
+/* let score = Number(prompt("점수 : "));
+let result6= (score >= 0 && score <= 100)?
+            (score >= 90 ? "A" :
+             score >= 80 ? "B" : "C") :
+            "잘못된 점수";
+document.write(`<h2>result6 : ${result6}</h2>`); */
+
+// 문제 7번
+/* let age = Number(prompt("나이 : "));
+let age20 = (age >= 20 && age <=29)? "이벤트 대상입니다" : "이벤트 대상이 아닙니다";
+console.log(`result7 : ${age20}`); */
+
+// 문제 8번
+/* let likeCount = 3;
+console.log(`좋아요 : ${++likeCount}`); */
+
+// 문제 9번
+/* let todoList = ['장보기', '과제하기'];
+let n = prompt("새로운 할 일 : ");
+todoList.push(n);
+console.log(`result9 : ${todoList}`); */
+
+// 문제 10번
+let waitingList = ['김민준', '이서연', '박도윤', '최지우'];
+console.log(`마지막 대기자는 : ${waitingList [3]}`);
