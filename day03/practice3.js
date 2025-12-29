@@ -29,8 +29,7 @@ console.log(`result5 : ${result5}, ${result6}`); */
 //문제 6번
 /* let score = Number(prompt("점수 : "));
 let result6= (score >= 0 && score <= 100)?
-            (score >= 90 ? "A" :
-             score >= 80 ? "B" : "C") :
+            (score >= 90 ? "A" : score >= 80 ? "B" : "C") :
             "잘못된 점수";
 document.write(`<h2>result6 : ${result6}</h2>`); */
 

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Yeonseong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Giranghaerang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMKIRANGHAERANG.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.title{
+    font-family: Yeonseong;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.content{
+    font-family: iranghaerang;
+    font-weight: bold;
+    color: blue; 
+    text-shadow: 0px 0px 1px;
+    word-spacing: 10px; 
+    letter-spacing: 10px; 
+    line-height:160%; 
+}
+
+.writer{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+
+}
+.writer2{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline overline line-through;
+    text-shadow: 1px 1px 2px;
+    color: red;
+}
+
+.content2{
+    font-family: iranghaerang;
+    font-weight: bold;
+    color: blue; 
+    text-shadow: 0px 0px 1px;
+    word-spacing: 10px; 
+    letter-spacing: 10px; 
+    line-height:160%; 
+}
+.writer3{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color: red;
+}
