@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="practice2.css">
+</head>
+
+<body>
+    <h1 class="p">
+        <img src="phy.png" width="100" height="100" style="object-fit: cover;" />
+        Physical Activity Readiness Questionnaire
+    </h1>
+
+    <form class="k">
+        Name : <input type="text" placeholder="Name">
+        Gender : <input type="text" placeholder="Gender">
+        Age : <input type="number" placeholder="Age">
+        Date of birth : <input type="date">
+    </form> <br />
+    <hr />
+    <div class="n">Regular physical activity is fun and healthy, and increasingly,
+        more people are starting to become more active every day.<br />
+        Being more active is very safe for most people.
+        However, some people should check with their doctor before they start becoming much more physically active.
+        <br /> <br />
+        If you are planning to become much more physically active than you are now, start by answering the
+        seven questions in the box below. <br />
+        If you are between the ages of 15 and 69, the PAR-Q will tell you if you
+        should check with your doctor before you start. <br />
+        If you are over 69 years of age, and you are not used
+        to being very active, check with your doctor.
+    </div>
+
+    <h4 class="p1"> Instructions </h4>
+    <div class="n2"> Common sense is your best guide when you answer these questions. Please read the questions
+        carefully and answer each one honestly: check YES or NO. </div> <br />
+
+    <style>
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <table class="center-table" border="1" ;>
+        <tr>
+            <th> Questions</th>
+            <th>Yes</th>
+            <th>No</th>
+        </tr>
+        <tr>
+            <td>
+                1. Has your doctor ever said that you have a heart
+                condition and that you should only do physical
+                activity recommended by a doctor?
+            </td>
+            <td>
+                <input type="radio" name="1" />
+            </td>
+            <td>
+                <input type="radio" name="1" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2. Do you feel pain in your chest when you do physical
+                activity?
+            </td>
+            <td>
+                <input type="radio" name="2" />
+            </td>
+            <td>
+                <input type="radio" name="2" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3. In the past month, have you had chest pain when
+                you were not doing physical activity?
+            </td>
+            <td>
+                <input type="radio" name="3" />
+            </td>
+            <td>
+                <input type="radio" name="3" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4. Do you lose your balance because of dizziness or do
+                you ever lose consciousness?
+            </td>
+            <td>
+                <input type="radio" name="4" />
+            </td>
+            <td>
+                <input type="radio" name="4" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5. Do you have a bone or joint problem (for example,
+                back, knee, or hip) that could be made worse by a
+                change in your physical activity?
+            </td>
+            <td>
+                <input type="radio" name="5" />
+            </td>
+            <td>
+                <input type="radio" name="5" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                6. Is your doctor currently prescribing drugs (for
+                example, water pills) for your blood pressure or heart
+                condition?
+            </td>
+            <td>
+                <input type="radio" name="6" />
+            </td>
+            <td>
+                <input type="radio" name="6" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                7. Do you know of any other reason why you should not
+                do physical activity?
+            </td>
+            <td>
+                <input type="radio" name="7" />
+            </td>
+            <td>
+                <input type="radio" name="7" />
+            </td>
+        </tr>
+    </table>
+
+    <h4 class="p2"> Instructions </h4>
+    <div class="n3">
+        Talk with your doctor by phone or in person BEFORE you start becoming much more physically active
+        or BEFORE you have a fitness appraisal. Tell your doctor about the PAR-Q and which questions you
+        answered YES.
+    </div> <br />
+    <hr />
+
+    <h4 class="p3"> Suggestion </h4>
+    <div class="n3">
+        <textarea cols="100" rows="5"></textarea>
+    </div>
+
+
+    <hr /><br />
+
+
+    <!-- ------------------------------------------------------------------>
+
+    <button class="b1" type="button"> Submit </button>
+
+
+    <hr /><br />
+
+    <div class="test">
+        <h3>
+            <img src="image.png" height=100px weight=200px>
+        </h3>
+    </div>
+    <div class="test1">
+        <h3 font-size="30px">
+            설문자 정보
+        </h3>
+        <p>
+            이름: <input type="text" name="name" size="20"> <br>
+            나이: <input type="text" name="age" size="20"> <br>
+            성별: <input type="radio" name="gender" value="male">남자
+            <input type="radio" name="gender" value="female">여자 <br>
+        </p>
+        <hr>
+    </div>
+    <div class="test2">
+        <h3 font-size="30px">
+            설문조사
+        </h3>
+        <p>
+            1. 스타벅스에 얼마나 자주 방문하세요? <br>
+            <input type="radio" name="visit" value="index">매일<br>
+            <input type="radio" name="visit" value="index">주 1회<br>
+            <input type="radio" name="visit" value="index">주 2회<br>
+            <input type="radio" name="visit" value="index">~2회<br>
+        </p><br>
+        <p1>
+            2. 스타벅스에서 어떤 메뉴를 주로 마시나요?<br>
+            <input type="radio" name="menu" value="index1">아메리카노<br>
+            <input type="radio" name="menu" value="index1">카페라떼<br>
+            <input type="radio" name="menu" value="index1">아이스티<br>
+            <input type="radio" name="menu" value="index1">그외<br>
+        </p1><br>
+        <p2>
+            3. 스타벅스 매장 내 분위기는 어떠신가요?<br>
+            <input type="radio" name="te" value="index2">매우 만족<br>
+            <input type="radio" name="te" value="index2">만족<br>
+            <input type="radio" name="te" value="index2">불만족<br>
+            <input type="radio" name="te" value="index2">매우불만족<br>
+        </p2><br>
+        <p3>
+            4. 스타벅스의 전반적인 서비스는 만족스러운가요?<br>
+            <input type="radio" name="se" value="index3">매우 만족<br>
+            <input type="radio" name="se" value="index3">만족<br>
+            <input type="radio" name="se" value="index3">불만족<br>
+            <input type="radio" name="se" value="index3">매우불만족<br>
+        </p3><br>
+        <p4>
+            5. 스타벅스를 친구나 가족에게 추천하시겠습니까?<br>
+            <input type="radio" name="fr" value="index4">예<br>
+            <input type="radio" name="fr" value="index4">아니요<br>
+        </p4><br>
+    </div>
+    <hr>
+    <div class="test3">
+        기타사항<br>
+        <textarea name="value" rows="10" cols="50"></textarea>
+    </div>
+    <hr>
+    <div class="test4">
+        작성일<input type="date"><br>
+        작성시간<input type="time"><br>
+    </div>
+    <div class="test5">
+        <button type="submit">제출하기</button>
+
+
+</body>
+
+</html>

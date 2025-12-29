@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Juache';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YeogiOttaeJalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.n {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.n2 {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.n3 {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+textarea.n3 {
+    margin: 0 auto;
+    display: inline-block;
+
+}
+
+Button.b1 {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.p {
+    text-align: center;
+    font-family: Juache;
+    text-shadow: 1.5px 1.5px 2px;
+    color: rgba(84, 44, 124, 0.83);
+    font-size: 35px;
+}
+
+.p img {
+    vertical-align: middle;
+}
+
+
+.p1 {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.p2 {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.p3 {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.k {
+    text-align: center;
+    font-family: YeogiOttaeJalnan;
+    font-size: 13px;
+}
+
+.k2 {
+    text-align: right;
+    font-family: YeogiOttaeJalnan;
+    font-size: 13px;
+
+}
+
+.center-table {
+    font-family: YeogiOttaeJalnan;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.b1 {
+    background-color: white;
+    font-family: YeogiOttaeJalnan;
+}
+
+/* ----------------------------------------------------------- */
+
+
+.test1 h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.test1 p {
+    font-weight: bold;
+}
+
+.test2 p,
+p1,
+p2,
+p3,
+p4 {
+    font-weight: bold;
+}
+
+.test3 {
+    color: brown;
+}
