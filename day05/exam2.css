@@ -1,0 +1,30 @@
+*{
+    border: solid 1px red;
+    margin: 10px;
+}
+
+.s1{
+    display: inline; /* 표기 방법 */
+    width: 100px; height: 100px; /* 사이즈 불가능 */
+    /* (왼.오른)안쪽 여백만 가능 */
+    margin: 10px; padding: 50px;
+}
+
+.s2{
+    display: block; 
+    /* 사이즈 적용 가능  */
+    width: 100px; height: 100px;
+    /* 여백 가능 */
+    margin: 20px; padding: 20px;
+}
+
+.s3{
+    display: inline-block;
+    /* 사이즈 가능 */
+    width: 100px; height: 200px;
+    margin: 50px; padding: 50px; /* 여백 가능 */
+}
+
+.s4{
+    
+}

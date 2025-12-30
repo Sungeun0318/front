@@ -1,0 +1,63 @@
+.X{
+    margin: 20px;
+}
+
+.u1{
+    margin: 10px;
+}
+
+.b1{
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.b2{
+    display: inline;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.q1{
+    display: block;
+    background-color: rgb(55, 162, 137);
+    margin: 10px;
+    padding: 20px;
+}
+
+.q2{
+    color: orange;
+}
+
+.q3{
+    color: black;
+}
+
+.v1{
+    
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.v2{
+    display: inline;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.t1{
+    display: block;
+    background-color: rgb(55, 162, 137);
+    margin: 10px;
+    padding: 20px;
+}
+
+.t3{
+    color: orange;
+}
+
