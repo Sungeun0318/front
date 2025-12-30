@@ -1,0 +1,56 @@
+.l1 {
+    border: solid 1px red;
+    border-radius: 20px;
+    box-shadow: 2px 0px 9px rgb(207, 63, 63);
+    padding: 50px;
+    vertical-align: middle;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 550px;
+    margin-left: 550px;
+    text-align: center
+    
+}
+
+
+.L1 {
+    
+    text-align: top;
+}
+
+.l2 {
+    text-align: top;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.r1{
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px;
+
+}
+.r2{
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px;
+}
+.g1{
+    
+}
+.g2{
+    background-color: blue;
+    border-radius: 9px;
+    font-size: 15px;
+    color: white;
+    padding-top:8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+
+.w1{
+    color: blue;
+}
