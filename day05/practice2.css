@@ -1,3 +1,10 @@
+/* 작업용 완성 후 삭제 
+*{
+    border: 1px solid red;
+    padding: 20px;
+} */
+
+
 .l1 {
     border: solid 1px red;
     border-radius: 20px;
@@ -9,12 +16,26 @@
     margin-right: 550px;
     margin-left: 550px;
     text-align: center
-    
 }
+
+/* 로그인 구역 */
+
+/* .로그인구역 {
+/* width: 350px;       구역 가로 사이즈 */
+/* text-align: center
+/* 해당 구역 가로 가운데 배치 */
+/* margin: 0 auto;
+/* 해당 구역 가로 */
+/* box-shadow: 2px 2px 2px red;
+/* 구역 그림자 */
+/* padding: 20px;
+
+} */ 
+
 
 
 .L1 {
-    
+
     text-align: top;
 }
 
@@ -26,31 +47,32 @@
     font-size: 30px;
 }
 
-.r1{
+.r1 {
     border-radius: 7px;
     padding: 5px;
     margin: 10px;
 
 }
-.r2{
+
+.r2 {
     border-radius: 7px;
     padding: 5px;
     margin: 10px;
 }
-.g1{
-    
-}
-.g2{
+
+.g1 {}
+
+.g2 {
     background-color: blue;
     border-radius: 9px;
     font-size: 15px;
     color: white;
-    padding-top:8px;
+    padding-top: 8px;
     padding-right: 20px;
     padding-bottom: 8px;
     padding-left: 20px;
 }
 
-.w1{
+.w1 {
     color: blue;
 }
