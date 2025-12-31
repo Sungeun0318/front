@@ -121,13 +121,15 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 //     플레이어 2가 이기면 '플레이어2 승리'를 출력합니다.
 // 두 플레이어가 같은 것을 내면 '무승부'를 출력합니다.
 
-let player = prompt('가위, 바위, 보 : ');
-let player2 = prompt('가위, 바위, 보 : ');
-let b1 = '가위' > '보'
-if(player == player2){console.log('무승부');}
-else if(player != player2 && b1 ){console.log('플레이어1 승리');}
-else if(player != player2){console.log('플레이어2 승리');}
-else{console.log("?")}
+// let player = prompt('가위, 바위, 보 : ');
+// let player2 = prompt('가위, 바위, 보 : ');
+
+// if (player == player2) { console.log('무승부'); }
+// else if (player == '가위' && player2 =='보' ||
+//     player == '보' && player2 == '바위' ||
+//     player == '바위'&& player2 =='가위'
+// ) { console.log('플레이어1 승리'); }
+// else { console.log("플레이어2 승리") }
 
 
 
@@ -137,7 +139,15 @@ else{console.log("?")}
 // 주차 위치 목록: let locationArray = ['A1', 'B3', 'C2'];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오.만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
 
+// let carArray = ['250어7142', '142가7415', '888호8888'];
+// let locationArray = ['A1', 'B3', 'C2'];
+// let sum = prompt('차량 번호 : ');
+// let num = carArray.indexOf(sum);
 
+// if(num != -1){console.log(locationArray[num]);}
+// //  원래는 locationArray[num] 이거인데 locationArray(num) 이렇게 써서 배열로 안되가지구 계속 안됐음...
+
+// else{console.log('차량이 존재하지 않습니다.');}
 
 
 
@@ -145,4 +155,12 @@ else{console.log("?")}
 //     문제 10: 수강 신청 목록에서 과목 제외하기
 // 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 // let courseList = ['수학', '영어', '과학', '국어'];
-// 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요.만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
+// 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요.
+// 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
+// let courseList = ['수학', '영어', '과학', '국어'];
+// let j = prompt('수강 신청한 과목 : ');
+// let k = courseList.indexOf(j);
+// if (k != -1) {courseList.splice(k, 1), console.log(courseList);}
+// else {console.log('해당 과목은 신청 목록에 없습니다.');}
+
+
