@@ -4,7 +4,6 @@ html {
 
 body,
 button,
-input,
 label,
 select {
     background-color: #fff;
@@ -14,7 +13,10 @@ select {
     margin: 0;
     padding: 0;
     font-size: 12px;
+
 }
+
+
 
 div {
     display: block;
@@ -85,6 +87,8 @@ div {
     color: #606770;
     font-size: 15px;
     line-height: 24px;
+    text-align: center;
+    font-weight: 400;
 }
 
 /* 폼 영역 */
@@ -94,6 +98,20 @@ div {
     border-top: 1px solid #DADDE1;
     box-sizing: border-box;
     padding: 16px;
+    position: relative;
+    width: 432px;
+}
+
+input {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 11px;
+    border-radius: 5px;
+    color: #1c1e21;
+    display: block;
+    border: 1px solid #ccd0d5;
+    height: 16px;
+    box-sizing: content-box;
 }
 
 /* 이름 (성, 이름) */
@@ -102,20 +120,14 @@ div {
     display: flex;
     gap: 12px;
     margin-bottom: 6px;
-
+    width: 399px;
+    border-color: #ccd0d5;
 
 }
 
 .v1,
 .v2 {
-    flex: 1;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 16px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin: 0;
-    border: 1px solid #eeeeee;
+    width: 170px;
 }
 
 /* 휴대폰/이메일 */
@@ -125,34 +137,44 @@ div {
 }
 
 .v3 {
-    width: 100%;
-    padding: 11px;
-    font-size: 15px;
-    box-sizing: border-box;
-    border-radius: 5px;
+    width: 375px;
+    margin-bottom: 11px;
 }
 
 /* 비밀번호 */
 .V3 {
     margin-bottom: 6px;
+    
 }
 
 .v4 {
-    width: 100%;
-    padding: 11px;
-    font-size: 15px;
-    box-sizing: border-box;
-    border-radius: 5px;
+    width: 375px;
 }
 
 /* 생일 라벨 */
 .V4 {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 2px 0 4px;
 }
 
 .v5 {
+    color: #606770;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    display: inline-block;
+
+}
+
+.v7 {
+    color: #606770;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    display: inline-block;
 
 }
 
@@ -162,36 +184,42 @@ div {
 }
 
 .v6 {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 15px;
     display: inline-block;
-    margin: 0 auto;
+    vertical-align: middle;
+
 }
 
 .v8 {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 15px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .G1 {
     display: flex;
     gap: 12px;
+    margin-bottom: 11px;
 }
 
 .g1,
 .g2,
 .g3 {
     flex: 1;
-    padding: 6px;
+    padding: 0 20px 0 8px;
     font-size: 15px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    height: 36px;
+    background-color: #fff;
+    color: #1c1e21;
 }
 
 /* 성별 라벨 */
 .V6 {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 2px 0 4px;
 }
 
 .v7 {
@@ -204,11 +232,9 @@ div {
     box-sizing: border-box;
     color: #1c1e21;
     display: inline-block;
-    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
-    margin-top: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     width: 100%;
 
 }
@@ -216,9 +242,8 @@ div {
 .K1 {
     display: flex;
     flex-wrap: wrap;
-    margin: -8px -6px -6px;
+    margin: -8px -6px -1px;
     width: 411px;
-
 
 }
 
@@ -233,45 +258,62 @@ div {
     font-weight: 400;
     height: 36px;
     margin: 8px 6px 6px;
-    padding: 0;
+    padding: 0 28px 0 10px;
     position: relative;
     width: auto;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 36px;
+    vertical-align: middle;
 }
 
 
 .n1 {
-    color: #606770;
-    cursor: default;
-    font-weight: 600;
-    vertical-align: middle;
-}
-
-.k1 input,
-.k2 input,
-.k3 input {
+    position: absolute;
+    right: 10px;
+    top: 0;
     margin: 0;
+    cursor: pointer;
+    width: 13px;
+    height: 36px;
 }
 
 /* 약관 */
 .V8 {
-    margin: 10px 0;
+    width: auto;
+    color: #777;
+    font-size: 11px;
+    margin: 0;
+    display: block;
+    margin-top: 20px;
+    
 }
 
 .v9 {
     font-size: 11px;
     line-height: 14px;
     margin-bottom: 10px;
+    color: #606770;
+}
+
+.v10,
+.v12,
+.v13 {
+    color: #1877f2;
 }
 
 .v11 {
     font-size: 11px;
     line-height: 14px;
+    color: #606770;
+    margin-bottom: 25px;
 }
 
 /* 가입하기 버튼 */
 .V9 {
     text-align: center;
-    margin: 24px 0 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .Y1 {
@@ -282,21 +324,32 @@ div {
     box-shadow: none;
     color: #fff;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     height: 36px;
-    overflow: hidden;
+    line-height: 23px;
     padding: 0 32px;
+    margin: 10px 0;
     text-shadow: none;
+    width: 200px;
+}
+
+.Y1:hover {
+    background-color: #42b72a;
 }
 
 /* 이미 계정이 있으신가요 */
 .V10 {
     text-align: center;
-    margin-top: 15px;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .P1 {
-    padding: 10px 0;
+    padding: 0;
     position: relative;
     text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 17px;
 }
+
