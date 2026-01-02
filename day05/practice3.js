@@ -165,7 +165,7 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 
 
 //[2]
-//if ( palyer2 + 1 % 3 ) { console.log('플레이어1 승리'); }
+//if ( player 1 == player2 + 1 % 3 ) { console.log('플레이어1 승리'); }
 
 
 //     문제 9: 주차 차량 위치 검색
