@@ -85,6 +85,7 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 // 또는 연도가 400의 배수일 때
 // 출력 예시: '2024년은 윤년입니다.' 또는 '2023년은 평년입니다.'
 
+
 // let year = Number(prompt('연도 입력 : '));
 // if(year % 4 == 0  || year % 400 == 0 && year % 100 != 0) {console.log('윤년');}
 // else{console.log('평년');}
@@ -94,6 +95,12 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 // 서로 다른 세 개의 정수를 입력받아, 오름차순(작은 수부터 큰 수 순서)으로 정렬하여 출력하는 프로그램을 작성하시오.
 //     예시: 17, 4, 8 입력 시 4, 8, 17 출력
 
+// 참조 " [1] a b c 비교 : a > b, a > c, b > c 총 3번, [2] 두 변수간의 값 교체/스왑 "
+// 스왑 : (1) 변수는 하나의 자료(값)만 저장한다. (2) 연산은 하나씩 처리된다.
+// 방법 : 임시저장소 인 temp 변수를 활용한다. a와 b의 값 스왑, temp = a; b = a; a = temp;
+
+// 25.12.31
+// 직접 풀이 (배열 사용)
 // let a = Number(prompt("정수 a : "));
 // let b = Number(prompt("정수 b : "));
 // let c = Number(prompt("정수 c : "));
@@ -107,6 +114,16 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 // else{c > a && a > b, console.log(b, a, c);} 
 
 
+// 26.01.02
+// 교수님 풀이  (템프 사용)
+// let a = Number(prompt("정수 a : "));
+// let b = Number(prompt("정수 b : "));
+// let c = Number(prompt("정수 c : "));
+
+// if( a > b ){let temp = a; a = b; b = temp;}    // 비교1 : 만약에 앞에 있는 값이 더 크면 값 스왑
+// if( a > c ){let temp = a; a = c; c = temp;}    // 비교2 : if if if  다중 조건 다중 참 VS if else if else if  다중 조건 단일 참
+// if( b > c ){let temp = b; b = c; c = temp;}    // 비교3 : 반복문 이용하면 충분히 코드 줄일 수 있다.
+// console.log(`${ a } ${ b } ${ c }`);
 
 
 // 문제 8: 가위바위보 게임
@@ -121,16 +138,34 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 //     플레이어 2가 이기면 '플레이어2 승리'를 출력합니다.
 // 두 플레이어가 같은 것을 내면 '무승부'를 출력합니다.
 
-// let player = prompt('가위, 바위, 보 : ');
-// let player2 = prompt('가위, 바위, 보 : ');
+// 약속 : 가위 대신에 0으로 하자. 왜? 가위 라는 데이터는 용량이 크니까 느리다.
+// 경우의 수 : 승리( 0 == 2, 1 == 0, 2 == 1), 무승부 ( 0 == 0, 1 == 1, 2 == 2)
+// 경우의 수 2 : [플레이어 1 이기는 공식] 3(2+1) % 3 == 0, 1(0+1) % 3 == 1, 2(1+1) % 3 == 2
+
+// 25.12.31
+// 직접 풀이
+
+// let player = Number(prompt('가위[0], 바위[1], 보[2] : '));
+// let player2 = Number(prompt('가위[0], 바위[1], 보[2] : '));
 
 // if (player == player2) { console.log('무승부'); }
-// else if (player == '가위' && player2 =='보' ||
-//     player == '보' && player2 == '바위' ||
-//     player == '바위'&& player2 =='가위'
-// ) { console.log('플레이어1 승리'); }
+// else if (player == '0' && player2 =='2' || player == '2' && player2 == '1' || player == '1'&& player2 =='0') { console.log('플레이어1 승리'); }
 // else { console.log("플레이어2 승리") }
 
+
+
+// 26.01.02
+// 교수님 풀이 (직접 풀이랑 같음)
+// let player = prompt('가위[0], 바위[1], 보[2] : ');
+// let player2 = prompt('가위[0], 바위[1], 보[2] : ');
+
+// if (player == player2) { console.log('무승부'); }
+// else if (player == '0' && player2 =='2' || player == '2' && player2 == '1' || player == '1'&& player2 =='0') { console.log('플레이어1 승리'); }
+// else { console.log("플레이어2 승리") }
+
+
+//[2]
+//if ( palyer2 + 1 % 3 ) { console.log('플레이어1 승리'); }
 
 
 //     문제 9: 주차 차량 위치 검색
@@ -138,6 +173,10 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 // 차량 번호 목록: let carArray = ['250어7142', '142가7415', '888호8888'];
 // 주차 위치 목록: let locationArray = ['A1', 'B3', 'C2'];
 // 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오.만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.
+
+
+// 25.12.31
+// 직접 풀이
 
 // let carArray = ['250어7142', '142가7415', '888호8888'];
 // let locationArray = ['A1', 'B3', 'C2'];
@@ -157,6 +196,10 @@ console.log(가장큰수); //변수 활용 : (1) [입력받은/중간연산식] 
 // let courseList = ['수학', '영어', '과학', '국어'];
 // 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요.
 // 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.
+
+// 25.12.31
+// 직접 풀이
+
 // let courseList = ['수학', '영어', '과학', '국어'];
 // let j = prompt('수강 신청한 과목 : ');
 // let k = courseList.indexOf(j);
