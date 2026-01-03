@@ -74,17 +74,25 @@ for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 �
 /*문제 6: 배열 요소의 합계와 평균 구하기
 다음 학생들의 점수가 담긴 배열이 있습니다. for 반복문을 사용하여 모든 점수의 합계와 평균을 계산하여 콘솔에 출력하시오.
 let scores = [85, 92, 78, 65, 95]; */
-// 초기값 : let index = 0;
-// 조건문 : index = scores.length -1;
+// 초기값 : let scores = [85, 92, 78, 65, 95]; let a = 0;
+// 조건문 : index <= scores.length-1
 // 증감식 : index++;
-// 실행문 : 
+// 실행문 : 합계 : ${합계}`, `평균 : ${(평균}
 
-let scores = [85, 92, 78, 65, 95];
-let sum = 0;
-for(let index = 0; index = scores.length -1; index++){
-    sum += index; `${평균}` == 합계/scores.length-1;
-}
-console.log(sum, `${평균}`);
+
+// 반복 함수 쓰기 전
+// let scores = [85, 92, 78, 65, 95];
+// let 합계 = scores[0]+scores[1]+scores[2]+scores[3]+scores[4]
+// let 평균 = 합계/scores.length-1
+// console.log( `합계 : ${합계}`, `평균 : ${(평균}`);
+
+// let scores = [85, 92, 78, 65, 95];
+// let a = 0;
+// for( let index = 0; index <= scores.length-1; index ++){
+//     a += scores[index]; 
+// }
+// console.log(`합계 ${a}`, `평균 : ${a/scores.length}`)
+
 
 
 /* 문제 7: 특정 조건에서 반복문 탈출하기 (break)
@@ -98,6 +106,11 @@ let scores = [77, 82, 100, 54, 96];
 
 
 
+
+
+
+
+
 /*문제 8: 특정 조건 건너뛰기 (continue)
 점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.
 let scores = [90, 45, 72, 88, 59, 100];*/
@@ -107,6 +120,9 @@ let scores = [90, 45, 72, 88, 59, 100];*/
 // 실행문 : 
 
 
+
+
+
 /*문제 9: 배열에서 특정 값의 개수 세기
 다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.
 let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
@@ -114,6 +130,9 @@ let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
 // 조건문 : 
 // 증감식 : 
 // 실행문 : 
+
+
+
 
 
 

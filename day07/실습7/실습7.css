@@ -146,38 +146,107 @@ li{
     margin: 20px auto ; 
 }
 
-#content{
+#Content{
     width: 1030px;
     margin: auto 30px;
+    display: flex;
+
 }
 
-#content > img{
-    /* [1] 이미지 감싼 구역 생성 [2] display : block  변경 */
-    margin: 0 auto;
-    display: block;
+
+/* 3-2-1 본문 */
+
+#content{
+    padding: 5px;
+    width: 400px;
 }
 
-#content > h3 {
+#content > div {
     font-size: 20px;
-    border-bottom: 1px solid #eeeeee;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
+#알림1{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#알림1 > ol > li{
+    margin: 8px;
+}
+
+
+
+
+.C{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+#게시판1{
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* 3-2-2본문 */
+
 
 #content2{
-    width: 1030px;
-    margin: auto 30px;
+    padding: 5px;
+    width: 400px;
+    margin: 0 10px;
+    
 }
 
-#content2 > div{
-    /* [1] 이미지 감싼 구역 생성 [2] display : block  변경 */
-    margin: 0 auto;
-    display: block;
+#제빵_클래스{
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-#content2 > h3 {
+#content2 > div {
     font-size: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
+#img4{
+    margin-bottom: 10px;
+}
+
+#bread1{
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.Y1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#gg2{
+    padding-right: 50px;
+}
+
+.Y2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#gg4{
+    padding-right: 50px;
+}
+
 
