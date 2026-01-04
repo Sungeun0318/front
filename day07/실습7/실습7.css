@@ -71,7 +71,8 @@ li{
 }
 /* 3-1 사이드바 */
 #sidebar{
-    width: 250px;
+    width: 450px;
+    margin-right: -15px;
     
 }
 
@@ -144,10 +145,11 @@ li{
     justify-content: space-between;
     width: 1280px;
     margin: 20px auto ; 
+    margin-bottom: 0;
 }
 
 #Content{
-    width: 1030px;
+    width: 1280px;
     margin: auto 30px;
     display: flex;
 
@@ -158,7 +160,7 @@ li{
 
 #content{
     padding: 5px;
-    width: 400px;
+    width: 550px;
 }
 
 #content > div {
@@ -170,13 +172,13 @@ li{
 #알림1{
     border-bottom: 1px solid black;
     margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-weight: bold;
     font-size: 14px;
 }
 
 #알림1 > ol > li{
-    margin: 8px;
+    margin: 20px;
 }
 
 
@@ -185,14 +187,14 @@ li{
 .C{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
 }
 
 #게시판1{
     border-bottom: 1px solid black;
-    margin-bottom: 8px;
-    padding-bottom: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
     font-weight: bold;
     font-size: 14px;
 }
@@ -203,7 +205,7 @@ li{
 
 #content2{
     padding: 5px;
-    width: 400px;
+    width: 450px;
     margin: 0 10px;
     
 }
@@ -219,7 +221,7 @@ li{
 #content2 > div {
     font-size: 20px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 #img4{
@@ -227,7 +229,7 @@ li{
 }
 
 #bread1{
-    width: 150px;
+    width: 180px;
     margin-bottom: 5px;
 }
 
@@ -248,5 +250,55 @@ li{
 #gg4{
     padding-right: 50px;
 }
+
+
+/*  ========== 4 푸터 ============ */
+#footer{
+    background-color: rgba(3, 34, 80, 0.944);
+    color: white;
+    display: block;
+    justify-content: left;
+}
+
+#footer1{
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+
+#footer1 > span{
+    padding-right: 30px;
+}
+
+
+#footer2{
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.fff1{
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.fff2 > div{
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
