@@ -63,7 +63,7 @@ let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];*/
 //     for(let j = 0; j <= seatLayout[i].length-1; j++){
 //         console.log(seatLayout[i][j])
 //     }
-  
+
 // }
 
 
@@ -122,15 +122,45 @@ let numbers = [5, 3, 4, 1, 2];
 let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];*/
 
-let products = ['볼펜', '노트', '지우개'];
-let stock = [10, 5, 20];
+// 변수 한개 더 추가해서 on/off 역할 - 상품을 찾았는지 여부 
 
-let a = prompt("구매할 상품명 : ");
-let b = prompt("수량 : ");
+// let products = ['볼펜', '노트', '지우개'];
+// let stock = [10, 5, 20];
 
-for(let i = 0; i <= products.length-1; i++){
-    
-}
+// let a = prompt("구매할 상품명 : ");
+// let b = Number(prompt("수량 : "));
+
+// for (let i = 0; i <= products.length - 1; i++) {
+//     for (let j = 0; j <= stock.length - 1; j++) {
+
+//         if (a == products[i], b <= stock[j]) {
+//             console.log("구매 완료");
+//             stock[i] -= b;
+//             break;
+//         }
+//     }
+// } console.log("재고가 부족합니다.");
+
+
+// indexOf 쓴 코드
+// let products = ['볼펜', '노트', '지우개'];
+// let stock = [10, 5, 20];
+
+// let a = prompt("구매할 상품명 : ");
+// let b = Number(prompt("수량 : "));
+
+// let index = products.indexOf(a); 
+
+// if (index != -1) { 
+//     if (b <= stock[index]) { 
+//         stock[index] -= b;
+//         console.log("구매 완료!");
+//     } else {
+//         console.log("재고가 부족합니다.");
+//     }
+// } else { 
+//     console.log("해당 상품이 없습니다.");
+// }
 
 
 
@@ -150,8 +180,26 @@ for 반복문을 사용하여 모든 영화를 순회합니다.
 위키드          ★★★★☆☆☆☆☆☆
 글래디에이터2   ★★★★★★★☆☆☆
 청설            ★★★★★★☆☆☆☆
-
 */
+
+// let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+// let movieRatings = [8, 4, 7, 6];
+// let html = '';
+
+// for (let index = 0; index <= movieNames.length - 1; index++) {
+//     html += movieNames[index];
+//     let a = movieRatings[index];
+//     for (let i = 0; i <= 10; i++) {
+//         if (i <= a) {
+//             html += '★';
+//         }
+//         else { html += '☆' }
+//     }
+//     html += "<br/>";
+// }
+// document.write(html);
+
+
 
 /*문제 9: 좌석 예약 상태 표시하기
 총 6개의 좌석 상태 정보가 담긴 배열을 이용하여, 좌석 배치도와 상태를 HTML에 출력하는 프로그램을 작성하시오.
