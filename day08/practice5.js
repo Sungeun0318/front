@@ -20,14 +20,15 @@ for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하
 *
 */
 
-let q = "";
+// let q = "";
 
-for (let i = 5; i >= 1; i--) {
-    for (let j = 0; j < i; j++) {
-        q += '*';
-    }
-    console.log(q);
-}
+// for (let i = 5; i >= 1; i--) {
+//     for (let j = 0; j < i; j++) {
+//         q += '*';
+//     }
+//     q += '\n';
+// }
+// console.log(q);
 
 
 
@@ -37,6 +38,16 @@ for (let i = 5; i >= 1; i--) {
 let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
 힌트: 문자열의 .indexOf() 메소드를 사용하세요.*/
 
+// let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
+
+
+// for(let i = 0; i < userNames.length-1; i++){
+//     let a = userNames[i]
+//     if(a.indexOf('솔') != -1){  
+//         console.log(a);
+//         break;  
+//     }
+// }
 
 
 
@@ -45,20 +56,83 @@ let userNames = ['김하준', '이서아', '박솔민', '최도윤'];
 다음과 같은 2차원 배열(좌석표)이 있습니다. 중첩 for 반복문을 사용하여 모든 좌석의 값을 순서대로 출력하시오.
 let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];*/
 
+// let seatLayout = [['A1', 'A2', 'A3'], ['B1', 'B2', 'B3'], ['C1', 'C2', 'C3']];
+
+
+// for(let i = 0; i <= seatLayout.length-1; i++){
+//     for(let j = 0; j <= seatLayout[i].length-1; j++){
+//         console.log(seatLayout[i][j])
+//     }
+  
+// }
+
+
+
+
+
+
+
 /*문제 5: 배열의 중복 요소 제거하기
 주어진 배열에서 중복된 요소를 제거하고, 중복 없는 새로운 배열을 만들어 출력하시오.
 let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.*/
+
+// let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
+// let newAry= []; // 중복이 없고 새로운 배열
+// for(let index = 0; index <= numbers.length-1; index++){
+//     let num = numbers[index]; // index번째 값 추출/꺼내기
+//     if(newAry.indexOf(num) == -1){ // .index(찾을 값) : 찾았으면 인덱스 반환 함수, 없으면 -1
+//         newAry.push(num);          // .push(추가할 값) : 배열내 맨 마지막 요소 값 추가
+//     }
+// }
+// console.log(newAry);
+
+
 
 /*문제 6: 버블 정렬 (Bubble Sort) 구현하기
 주어진 숫자 배열을 '버블 정렬' 알고리즘을 이용하여 오름차순으로 정렬하고, 최종 정렬된 배열을 출력하시오.
 let numbers = [5, 3, 4, 1, 2];
 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.*/
 
+// let numbers = [5, 3, 4, 1, 2]; // 오름차순은 더 큰 값이 뒤로 이동한다. 스왑 : let temp = a; a = b; b = temp;
+// // (1) 5 > 3 (2) 3 > 4 (3) 4 > 1 (4) 1 > 2
+// // (1) 5 > 3 (2) 3 > 4 (3) 4 > 1
+// // (1) 5 > 3 (2) 3 > 4
+// // (1) 5 > 3
+
+// //[1]
+// for(let i = 0; i < numbers.length-1; i++){  // 마지막 인덱스는 인접한 인덱스(+1) 없기 때문에 생략
+//     for(let j = 0; j < numbers.length -1; j++){
+//         // console.log(j+1) // j는 마지막 인덱스까지 갈 필요가 없다.
+//         // j와 인접한 인덱스 (+1) -> 마지막 인덱스가 비교할 인덱스가 없다
+//         if( numbers[j] > numbers[j+1]){ // 부등호 바꾸면 오름 차순, 내림 차순 바꿀 수 있음
+//             let temp = numbers[j];
+//             numbers[j] = numbers[j+1]; 
+//             numbers[j+1] = temp;           // temp 스왑
+//         }
+//     }
+// } console.log(numbers);
+
+
+
+
 /*문제 7: 재고 관리 시스템
-두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 사용자로부터 구매할 상품명과 수량을 입력받아, 재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 재고가 부족하면 "재고가 부족합니다."를 출력합니다.
+두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 사용자로부터 구매할 상품명과 수량을 입력받아, 
+재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 재고가 부족하면 "재고가 부족합니다."를 출력합니다.
 let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];*/
+
+let products = ['볼펜', '노트', '지우개'];
+let stock = [10, 5, 20];
+
+let a = prompt("구매할 상품명 : ");
+let b = prompt("수량 : ");
+
+for(let i = 0; i <= products.length-1; i++){
+    
+}
+
+
 
 /*문제 8: 영화 평점 시각화하기
 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
