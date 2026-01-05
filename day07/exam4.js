@@ -64,7 +64,7 @@ for (let i = 1; i <= 5; i++) {
 }//for end
 
 // (2) breake;
-for( let i = 1; i<= 5; i++){
+for( let i = 1; i <= 5; i++){
     if(i==3){break;} // 만약에 i(반복변수)가 3일 떄 반복문 탈출/종료
     console.log(i); // 1 2, 1부터 5까지 출력하되 3이면 종료, 이유 : 3일 때 break 만났기 때문에
 } //for end

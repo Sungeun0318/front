@@ -1,6 +1,6 @@
-/* 공통 css 이면서 관례적인 기본 css */
+
 *{
-    box-sizing: content-box; /* content + padding + border */
+    box-sizing: border-box; /* content + padding + border */
     font-family: 굴림 나눔고딕;
     font-size: 12px;
     padding: 0;  /* 전체 여백 제거 */
