@@ -1,0 +1,48 @@
+.parent{
+    background-color: red;
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;  /* 하위 요소의 absolute 속성값 기준 */
+}
+
+.box{
+    background-color: yellow;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    left: 300px;
+    top: 50px;
+}
+
+.box2{
+    top: 120px;
+    left: 125px;
+}
+
+.box3{
+    top: 120px;
+    right: 125px;
+}
+
+.box4{
+    bottom: 120px;
+    left: 125px;
+}
+
+.box5{
+    bottom: 120px;
+    right: 125px;
+}
+
+.box6{
+    left: 300px;
+    bottom: 50px;
+}
