@@ -128,18 +128,24 @@ let stock = [10, 5, 20];*/
 // let stock = [10, 5, 20];
 
 // let a = prompt("구매할 상품명 : ");
-// let b = Number(prompt("수량 : "));
+// let find = -1; //찾은 인덱스 저장하는 변수, -1 못찾았다.
 
 // for (let i = 0; i <= products.length - 1; i++) {
-//     for (let j = 0; j <= stock.length - 1; j++) {
-
-//         if (a == products[i], b <= stock[j]) {
-//             console.log("구매 완료");
-//             stock[i] -= b;
-//             break;
-//         }
+//     if (a == products[i]) {
+//         find = a;
+//         break;
 //     }
-// } console.log("재고가 부족합니다.");
+// }
+// if (find == -1) {
+//     console.log("제품명이 없습니다.")
+// }
+// else {
+//     let b = Number(prompt("수량 : "));
+//     if (stock[find] >= b) {
+//         stock[find] -= b; console.log("구매완료")
+//     }
+//     else { console.log("재고가 부족합니다.") }
+// }
 
 
 // indexOf 쓴 코드
@@ -218,8 +224,20 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 예약석 빈좌석
 예약석 빈좌석
 */
-let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
 
+// let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+// let HTML = "";
+
+// for (let i = 0; i <= seatStatus.length - 1; i++) {
+//     HTML += `<span style = "color : ${seatStatus[i] == '빈좌석' ? "blue" : "red"};"> 
+//                 ${seatStatus[i]}
+//              </span>`;
+//     // ${ (i+1) % 2 == 0 ? "<br/>" : ""}`;
+//     if ((i + 1) % 2 == 0) {
+//         HTML += `<br/>`;
+//     }
+// }
+// document.write(HTML);
 
 
 /*문제 10: 주차 요금 정산하기
@@ -248,3 +266,40 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
 
 */
+
+// let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+// let usageMinutes = [65, 30, 140, 420];
+
+// let html = '';
+// for (let index = 0; index <= carNumbers.length - 1; index++) {
+//     /* 차량번호 */
+//     let number = carNumbers[index];
+//     html += `<div><span> ${number} :</span>`;
+//     /* 시간 출력 */
+//     let min = usageMinutes[index]; // i번째 이용시간[분] 꺼내기 
+//     html += `<span> ${min}분, 주차</span>`
+//     /* 요금 출력 */
+//     let money = 0;
+//     if (min <= 30) {
+//         money = 1000; // 만약에 사용 시간이 30분 이하면 요금 1000원
+//     }
+//     else {
+//         money = parseInt((min - 30) / 10) * 500 + 1000; // 10분 단위 이므로 1자릿수 제거, 10분마다 *500, 기본요금 1000
+//     }
+//     if( money > 20000){
+//         money = 20000;}// 만일 요금이 2만원 초과하면 2만원으로 고정
+//     html += `<span> 최종 요금 : ${money.toLocaleString()}원 </span>`  // 변수.toLocaleString() : 천단위 구분 쉼표 함수
+//     html += `</div>`
+// }
+// document.write(html);
+
+
+
+
+
+
+
+
+
+
+
