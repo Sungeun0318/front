@@ -23,8 +23,15 @@ console.log(Object.entries(obj2)); // 객체내 모든 엔트리(entries)들 호
 obj2.속성명3 = true;
 // [6] 객체 속성 값 수정, 객체변수명.수정 할 속성명 = 새로운 값, 주의 할 점 : 수정할 속성명이 존재하지 않으면 *추가*
 obj2.속성명3=false;
+//[7] 객체 속성 삭제, delete 객체변수명.속성명;
+delete obj2.속성명3;
 
+//[8] 객체 속성 내 자료는 모든 자료형(타입) 가능하다.
+let obj3 = { a : 1, b : "안녕", c : true, d : [1, 2], e : {aa : 1, bb : "안녕"}};
 
+//[9] in 연산자, '찾을 속성명' in 객체변수명, 해당 객체 내 속성이 있는지 확인(true/false)
+console.log( 'f' in obj3);  // false
+console.log( 'a' in obj3);  // true
 
 
 

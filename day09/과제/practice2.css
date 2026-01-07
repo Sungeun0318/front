@@ -75,8 +75,9 @@
 
 .submenu{
     position: absolute;
-    top: 370px;
-    left: 807px;
+    top: 380px;
+    left: 809px;
+    padding-bottom: 150px;      /* 패딩을 추가해서 호버 틈을 매꿔줌 */
     display: none;
 }
 
