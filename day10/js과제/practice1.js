@@ -53,6 +53,14 @@ const scores = [
   { name: 'C', math: 76, science: 78 }
 ];
 
+let a = 0;
+
+for( let i = 0; i <= scores.length-1; i++){
+  a += scores[i].math;
+}
+
+console.log( a / scores.length);
+
 
 
 
