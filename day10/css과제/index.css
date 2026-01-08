@@ -14,9 +14,6 @@ a {
     text-decoration: none;
 }
 
-
-#wrap {}
-
 /* =====================헤드======================= */
 #header {
     width: 100%;
@@ -58,8 +55,7 @@ a {
     padding: 0px 40px;
     position: sticky;
     top: 0px;
-    background-color: white;
-    opacity: 0.9;
+    background-color: rgba(255,255,255,0.9);
 }
 
 #main-meun {
@@ -105,7 +101,6 @@ a {
     background-color: white;
     text-align: center;
     display: none;
-    opacity: 1;
 }
 
 #main-meun>li>ul>li {
@@ -130,11 +125,6 @@ a {
 #main-meun>li:hover .r2{
     display: block;
 }
-
-
-
-
-
 
 /* ===================== content ======================= */
 #content {
@@ -220,8 +210,6 @@ a {
     padding-top: 5px;
 }
 
-
-
 /* ===================== footer ======================= */
 #footer {
     margin-top: 100px;
@@ -282,7 +270,6 @@ a {
     font-size: 10px;
     padding-bottom: 5px;
 }
-
 
 /* ===================== popup ======================= */
 #popup {

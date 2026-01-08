@@ -47,19 +47,19 @@
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 // scores 배열에 담긴 모든 학생의 수학(math) 점수 평균을 계산하여 콘솔에 출력하시오.
 
-const scores = [
-  { name: 'A', math: 80, science: 92 },
-  { name: 'B', math: 95, science: 88 },
-  { name: 'C', math: 76, science: 78 }
-];
+// const scores = [
+//   { name: 'A', math: 80, science: 92 },
+//   { name: 'B', math: 95, science: 88 },
+//   { name: 'C', math: 76, science: 78 }
+// ];
 
-let a = 0;
+// let a = 0;
 
-for( let i = 0; i <= scores.length-1; i++){
-  a += scores[i].math;
-}
+// for( let i = 0; i <= scores.length-1; i++){
+//   a += scores[i].math;
+// }
 
-console.log( a / scores.length);
+// console.log( a / scores.length);
 
 
 
@@ -71,12 +71,26 @@ console.log( a / scores.length);
 
 // 문제 4: 특정 조건을 만족하는 객체 찾기
 // products 배열에서 id가 3인 상품 객체를 찾아, 해당 객체 전체를 콘솔에 출력하시오. 일치하는 객체가 없으면 "상품을 찾을 수 없습니다."를 출력합니다.
-// const products = [
-//   { id: 1, name: '사과' },
-//   { id: 2, name: '바나나' },
-//   { id: 3, name: '포도' },
-//   { id: 4, name: '딸기' }
-// ];
+const products = [
+  { id: 1, name: '사과' },
+  { id: 2, name: '바나나' },
+  { id: 3, name: '포도' },
+  { id: 4, name: '딸기' }
+];
+
+
+for(let i = 0; i < products.length-1; i++){
+  if(products[i].id == 3){
+
+    console.log(products)
+  }
+}
+
+
+
+
+
+
 
 // 문제 5: 객체 배열 필터링하기
 // users 배열에서 isActive가 true인 사용자들만으로 구성된 새로운 배열 activeUsers를 만들고, 이 배열을 콘솔에 출력하시오.
