@@ -22,7 +22,7 @@ const person = { name: '김코딩', age: 25, }; */
 
 // const person = { name: '김코딩', age: 25, };
 
-// person2.email = "qwe@qwe.com"; /* [1] 객체내 속성 추가 : (객체)변수명.새로운속성명 = 값; */
+// person.email = "qwe@qwe.com"; /* [1] 객체내 속성 추가 : (객체)변수명.새로운속성명 = 값; */
 // delete person2.age; /* [2] delete (객체)변수명.삭제할속성명; */
 // console.log(person2); /* 객체 확인  */
 
