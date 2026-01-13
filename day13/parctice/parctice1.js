@@ -31,7 +31,7 @@
 //     a += num[i];
 
 //   }
-//   console.log(a);
+//   
 //   return a;
 
 // }
@@ -70,7 +70,7 @@ let userScore = 0; 전역 변수를 만드세요. gainScore() 함수는 userScor
 gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 콘솔에 출력하세요.*/
 
 // let userScore = 0;
-// function gainScore(win){
+// function gainScore(){
 //   userScore += 10
 // }
 
@@ -83,7 +83,7 @@ gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 �
 // gainScore();
 // loseScore();
 // console.log(userScore);
- 
+
 
 
 /*실습 5: 최고 점수 학생 찾기
@@ -101,14 +101,14 @@ gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 �
 
 // function findTopStudent(top){
 //   let a = top[0];
- 
+
 //   for(let i = 1; i <= students.length-1; i ++){
 //     if(top[i].score > a.score){  
 //       a = top[i];
-       
+
 //     }
 //   }
-//   console.log(a.name);
+//   retrun a.name;
 // }
 // findTopStudent(students);
 
@@ -123,23 +123,38 @@ gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 �
 */
 
 // const products = [
-
 //   { name: '노트북', price: 1200000, stock: 5 },
-
 //   { name: '모니터', price: 350000, stock: 12 },
-
 //   { name: '키보드', price: 80000, stock: 25 }
-
 // ];
 
+// let HTML = '<div>';
+
+// function renderProducts(product) {
+
+//   for (let i = 0; i <= products.length - 1; i++) {
+//     HTML += `<h4>${product[i].name}</h4>
+//             <p>${product[i].price}</p>
+//             <p>${product[i].stock}</p>`
+//   }
+//   HTML += `</div>`
+// }
+// renderProducts(products)
+// document.write(HTML);
 
 
 
 /*실습 7: 간단한 계산기
 
 num1, num2, operator ( '+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오.
-
 operator가 '+'이면 두 수의 합을, '-'이면 두 수의 차를 콘솔에 출력하시오. (if문 사용)*/
+
+
+// function calculator(num1, num2, operator){
+//   if( operator == "+"){console.log(num1 + num2);}
+//   else if(operator == "-"){console.log(num1 - num2);}
+// }
+// calculator(5,3,"+"); calculator(3, 2, "-");
 
 
 
@@ -149,19 +164,42 @@ todoList라는 할 일 목록이 담긴 전역 배열이 있습니다.
 
 renderList() 함수를 정의하시오. 이 함수는 todoList 배열을 순회하며 <li>할 일 내용</li> 형태의 HTML 문자열을 만듭니다.
 
-최종적으로 이 문자열을 HTML <ul> 태그로 표현하여 리스트를 화면에 그리시오.
+최종적으로 이 문자열을 HTML <ul> 태그로 표현하여 리스트를 화면에 그리시오.*/
 
-let todoList = ['장보기', '운동하기']*/
+// let todoList = ['장보기', '운동하기'];
+
+// let html = '<ul>'
+// function renderList() {
+//   for (let i = 0; i <= todoList.length - 1; i++) {
+//     html += `<li>${todoList[i]}</li>`
+//   }
+//   html += '</ul>'
+// }
+
+// renderList(todoList);
+// document.write(html);
+
 
 
 /*실습 9: 입장료 계산 함수
 
 임의의 나이(age)를 매개변수로 받아 입장료를 반환하는 getTicketPrice 함수를 만드시오.
-
 8세 미만: "무료"
-
 8세 이상 19세 이하: "5,000원"
-
 20세 이상: "10,000원"
-
 계산된 가격 문자열을 반환(return)하시오.*/
+
+
+
+// function getTicketPrice(age) {
+//   let result = [];
+//     if (age >= 20) {
+//       return "10000원"
+//     }
+//     else if(age >= 8){
+//       return "5000원"
+//     }
+//     else{ return "무료"}
+// }
+
+// console.log(getTicketPrice(21));
