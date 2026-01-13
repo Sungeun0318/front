@@ -21,22 +21,46 @@
 /*실습 2: 배열의 총합 구하기
 
 숫자로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 모든 요소의 합계를 구하여 반환하는 sumArray 함수를 만드세요. 아래 numbers 배열로 테스트해 보세요.
-// */
+*/
+
 // const numbers = [10, 20, 30, 40, 50];
-// function sumArray(num){
-//   for(let i = 0; i <= numbers.length-1; i ++){
-//     num += num[i];
+
+// function sumArray(num) {
+//   let a = 0;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     a += num[i];
+
 //   }
+//   console.log(a);
+//   return a;
+
 // }
-// console.log(sumArray[num]); 
+// sumArray(numbers);
+
+
+
 
 
 
 /*실습 3: 가장 긴 단어 찾기
 
 문자열로 이루어진 배열을 매개변수로 받아, for 반복문을 사용해 가장 긴 단어를 찾아 반환하는 findLongestWord 함수를 만드세요. 아래 words 배열로 테스트해 보세요.
+*/
+// const words = ['apple', 'banana', 'kiwi', 'strawberry'];
 
-const words = ['apple', 'banana', 'kiwi', 'strawberry'];*/
+// function findLongestWord(len) {
+//   let a = '';
+//   for (let i = 0; i <= words.length - 1; i++) {
+//     if (len[i].length > a.length) {
+//       a = len[i];
+//     }
+//   }
+//   return a;
+// }
+
+// console.log(findLongestWord(words));   
+
+
 
 
 /*실습 4: 게임 점수 관리하기
@@ -45,20 +69,50 @@ let userScore = 0; 전역 변수를 만드세요. gainScore() 함수는 userScor
 
 gainScore()를 세 번, loseScore()를 한 번 호출한 뒤, 최종 점수를 콘솔에 출력하세요.*/
 
+// let userScore = 0;
+// function gainScore(win){
+//   userScore += 10
+// }
+
+// function loseScore(lose){
+//   userScore -= 5
+// }
+
+// gainScore();
+// gainScore();
+// gainScore();
+// loseScore();
+// console.log(userScore);
+ 
+
 
 /*실습 5: 최고 점수 학생 찾기
 
 전역변수 students 배열 데이터를 이용하여 , 가장 높은 점수(score)를 가진 학생의 이름을 찾아 반환하는 findTopStudent 함수를 만드세요.
+*/
 
-const students = [
+// const students = [
+//   { name: '김철수', score: 85 },
 
-  { name: '김철수', score: 85 },
+//   { name: '이영희', score: 92 },
 
-  { name: '이영희', score: 92 },
+//   { name: '박민준', score: 78 }
+// ]
 
-  { name: '박민준', score: 78 }
+// function findTopStudent(top){
+//   let a = top[0];
+ 
+//   for(let i = 1; i <= students.length-1; i ++){
+//     if(top[i].score > a.score){  
+//       a = top[i];
+       
+//     }
+//   }
+//   console.log(a.name);
+// }
+// findTopStudent(students);
 
-];*/
+
 
 
 /*실습 6: 상품 목록 페이지 만들기
@@ -66,16 +120,19 @@ const students = [
 전역변수 products 배열 데이터를 이용하여, 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요.
 
 각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다.
+*/
 
-const products = [
+// const products = [
 
-  { name: '노트북', price: 1200000, stock: 5 },
+//   { name: '노트북', price: 1200000, stock: 5 },
 
-  { name: '모니터', price: 350000, stock: 12 },
+//   { name: '모니터', price: 350000, stock: 12 },
 
-  { name: '키보드', price: 80000, stock: 25 }
+//   { name: '키보드', price: 80000, stock: 25 }
 
-];*/
+// ];
+
+
 
 
 /*실습 7: 간단한 계산기
