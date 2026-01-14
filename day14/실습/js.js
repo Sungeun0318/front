@@ -15,14 +15,14 @@
 
 // 4. 객체가 다수 일떄는 배열 사용한다.
 
-const categoryAry = [ 
-    {"ccode" : 1, "category" : "음료"},
-    {"ccode" : 2, "category" : "과자"}
+const categoryAry = [
+    { "ccode": 1, "category": "음료" },
+    { "ccode": 2, "category": "과자" }
 ]
 
 const productAry = [
-    {"pcode" : 1, "image" :  "https://placehold.co/100x100/#eeeeee/white", "ccode" : 1, "name" : "코카콜라", "price" : 1000, "date" : "2025-06-17" },
-    {"pcode" : 2, "image" :  "https://placehold.co/100x100/#eeeeee/white", "ccode" : 2, "name" : "코카콜라", "price" : 1000, "date" : "2025-06-17" }
+    { "pcode": 1, "image": "https://placehold.co/100x100/#eeeeee/white", "ccode": 1, "name": "코카콜라", "price": 1000, "date": "2025-06-17" },
+    { "pcode": 2, "image": "https://placehold.co/100x100/#eeeeee/white", "ccode": 2, "name": "코카콜라", "price": 1000, "date": "2025-06-17" }
 ]
 
 //[2] 기능/함수 설계
@@ -36,19 +36,26 @@ const productAry = [
 //[3] 구현
 // 1. 출력함수 : 어디에 무엇을 출력하는지?
 productPrint(); // js가 열렸을 때 최초 1번 함수 실행
-function productPrint(){ // 함수만들기, 함수명은 아무거나, () 매개변수 없는상태, {} 함수 실행될때 처리할 코드
+function productPrint() { // 함수만들기, 함수명은 아무거나, () 매개변수 없는상태, {} 함수 실행될때 처리할 코드
     // 어디에
     const tbody = document.querySelector("tbody");
 
 
     // 무엇을 + 배열내 모든 객체들을 tr 구성하여 html 만들기 + 반복문
     let html = "";
-        for(let index = 0; index <= productAry.length-1; index++){
-            const product = productAry[index];
-            // console.log(product);
-            html += `<tr>
+    for (let index = 0; index <= productAry.length - 1; index++) {
+        const product = productAry[index];
+        // console.log(product);
+        let category = "";
+        for(let index = 0; index <= categoryAry.length-1; index++){
+            if(product.ccode == categoryAry[index].ccode){
+                category = categoryAry[index].category;
+                break;
+            }
+        }
+        html += `<tr>
                     <td><img src="${product.image}"/></td>
-                    <td class="v" >${product.ccode}</td>
+                    <td class="v" >${category}</td>
                     <td>${product.name}</td>
                     <td>${product.price}</td>
                     <td>${product.date}</td>
@@ -57,15 +64,15 @@ function productPrint(){ // 함수만들기, 함수명은 아무거나, () 매�
                     <button onclick="productUpdate(${product.pcode})">수정</button>
                     </td>
                 </tr>` // 반복(개체 개수) 횟수 만큼 tr(행) 생성
-        }
+    }
 
     // 출력
     tbody.innerHTML = html;
 }
 // 2. 삭제함수 : 해당 하는 행의 <삭제> 버튼을 클릭하면 삭제(배열내 제거 = .splice())처리 
-function productDelete(pcode){ // 매개변수로 삭제할 pcode 받았다. [삭제할 대상자]
-    for(let index = 0; index <= productAry.length-1; index++){// 1. pcode의 배열내 인덱스 찾기.
-        if(pcode == productAry[index].pcode){
+function productDelete(pcode) { // 매개변수로 삭제할 pcode 받았다. [삭제할 대상자]
+    for (let index = 0; index <= productAry.length - 1; index++) {// 1. pcode의 배열내 인덱스 찾기.
+        if (pcode == productAry[index].pcode) {
             productAry.splice(index, 1); // 3. 배열명.splice(삭제할인덱스, 개수);
             productPrint();// * 삭제 성공시 화면 새로고침/렌더링 한다.
             break; // 4. 1개만 삭제할 예정이므로 목표(삭제) 이뤘으면 반복문 종료
@@ -75,9 +82,9 @@ function productDelete(pcode){ // 매개변수로 삭제할 pcode 받았다. [�
 
 
 // 3. 수정함수 : 해당 하는 행의 <수정> 버튼을 클릭하면 수정(배열변수명[인덱스] 속성명 = 새로운값)
-function productUpdate(pcode){  
-    for(let index = 0; index <= productAry.length-1; index++){ // 1. 수정할 pcode의 인덱스를 배열에서 찾는다. <순회>
-        if(pcode == productAry[index].pcode){ // 2. 수정 할 코드와 index번째 제품(객체) 와 같으면
+function productUpdate(pcode) {
+    for (let index = 0; index <= productAry.length - 1; index++) { // 1. 수정할 pcode의 인덱스를 배열에서 찾는다. <순회>
+        if (pcode == productAry[index].pcode) { // 2. 수정 할 코드와 index번째 제품(객체) 와 같으면
             const newName = prompt("수정할 상품명 : ");
             const newPrice = prompt("수정할 가격 : ");
             productAry[index].name = newName;
@@ -91,14 +98,51 @@ function productUpdate(pcode){
 
 
 // 4. 등록함수 : 입력받은 값들을 객체(묶어서) 구성하여 배열에 저장(.push)
-function productAdd(){ 
+let pcode = 3; // [전역변수] 처음에는 1로 가정하고 시작 하되 샘플 데이터가 존재하면 마지막 코드 +1
+function productAdd() {
     // 1. 입력받은 값들을 가져온다.
-    // 2. 입력받은 값 과 식별코드 + 1, 현재날짜(new Date())로 객체를 구성한다.
-    // 3. 구성한 객체를 배열에 저장한다.
-    // 4. 화면 새로고침/렌더링 한다.
+    const categoryDom = document.querySelector(".category");
+    const category = categoryDom.value;
 
+    const nameDom = document.querySelector(".name");
+    const name = nameDom.value;
 
+    const priceDom = document.querySelector(".price");
+    const price = priceDom.value;
+
+    const imageDom = document.querySelector(".image");
+    const image = imageDom.files[0]; console.log(image);
+
+    //유효성 검사 1
+    if( category == "disabled"){
+        alert("카테고리를 선택하세요.!"); 
+        return;
+    } 
+    // 유효성 검사 2
+    if(name == "" || price == ""){
+        alert("제품명과 가격은 필수입력입니다.");
+        return;
+    }
+
+    /* new Date() 현재 시스템 날짜/시간 반환 */
+    const year = new Date().getFullYear(); // 현재 연도
+    const month = new Date().getMonth()+1; // 현재 월 // + 1월 - > 0취급, 2월 -> 1취급, 12월 -> 11취급 ---> 그래서 +1 해야한다.
+    const day = new Date().getDate(); // getDay 현재 요일 vs getDate 현재 일
+    const date = `${year}-${month < 10 ? "0"+month : month}-${day < 10 ? "0"+day : day}`  // [날짜 두자릿수 만들기] 만약에 3월 --> 03월
+   
+    /* pcode는 자동으로 마지막 객체의 pcode + 1  */
+    pcode += 1; // 다음 객체는 1증가 한 식별코드를 갖는다.
     
+    // 2. 입력받은 값 과 식별코드 + 1, 현재날짜(new Date())로 객체를 구성한다.
+        // 유효성검사 = 필요 없거나 잘못된 데이터 검증
+
+    const obj = {"pcode" : pcode, "image" : image == undefined ? "https://placehold.co/100x100" : URL.createObjectURL(image),"ccode" :  category, "name" : name, "price" : price, "date" : date}
+    // 3. 구성한 객체를 배열에 저장한다.
+
+    productAry.push(obj);
+    // 4. 화면 새로고침/렌더링 한다.
+    productPrint();
+
 }
 
 
