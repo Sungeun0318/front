@@ -91,7 +91,7 @@ function productUpdate(pcode) {
             productAry[index].price = newPrice;
             productPrint();
             // ***** 수정 성공시 [즉시] 화면 새로고침/렌더링 *****
-            return
+            return;
         }
     }
 }
@@ -125,10 +125,7 @@ function productAdd() {
     }
 
     /* new Date() 현재 시스템 날짜/시간 반환 */
-    const year = new Date().getFullYear(); // 현재 연도
-    const month = new Date().getMonth()+1; // 현재 월 // + 1월 - > 0취급, 2월 -> 1취급, 12월 -> 11취급 ---> 그래서 +1 해야한다.
-    const day = new Date().getDate(); // getDay 현재 요일 vs getDate 현재 일
-    const date = `${year}-${month < 10 ? "0"+month : month}-${day < 10 ? "0"+day : day}`  // [날짜 두자릿수 만들기] 만약에 3월 --> 03월
+    
    
     /* pcode는 자동으로 마지막 객체의 pcode + 1  */
     pcode += 1; // 다음 객체는 1증가 한 식별코드를 갖는다.

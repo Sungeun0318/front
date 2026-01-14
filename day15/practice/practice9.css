@@ -1,0 +1,157 @@
+/* ----------------------------전체--------------------------- */
+*{
+  padding: 5px;
+  margin: 0px;
+  border: 1px solid red;
+  box-sizing: content-box;
+}
+
+li{ list-style-type : none; }
+
+
+/* 헤더 */
+.wrap{background-color: #eeeeee; width: 1680px;}
+.header{ text-align: center;}
+.main1{display: flex; }
+
+/* 부서관리 */
+
+.left{ 
+  background-color: white;
+  border-radius: 10px;
+  width: 360px;
+}
+.left-top {
+  text-align: left;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.left-center > input{
+  background-color: #eeeeee;
+  border-radius: 5px;
+
+}
+
+.left-center > button {
+  background-color: #9333ea;
+  color: white;
+  border-radius: 5px;
+}
+
+.left-bottom > table{
+ 
+}
+
+.title > tr> td{
+  width: 200px;
+}
+#a{
+ background-color: white;
+ border: 0px;
+}
+
+.reBth{
+  background-color: white;
+  border: 0px;
+  color: skyblue;
+}
+
+.removeBth{
+  background-color: white;
+  border: 0px;
+  color: red;
+}
+
+/*센터*/
+.center{
+  width: 850px;
+   border-radius: 10px;
+}
+.center {
+  text-align: left;
+  background-color: white;
+}
+
+.center-top{
+  display: flex;
+  justify-content: center;
+}
+
+.center-top > div{
+  width: 400px;
+}
+
+.center-top > div >input{
+  width: 400px;
+}
+
+.center-center1{
+  display: flex;
+}
+
+.center-center1 > div{
+  width: 400px;
+}
+
+.center-center2{
+  text-align: right;
+}
+
+.center-center2 > button{
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.center-bottom{
+  
+
+}
+.table2{
+    
+    margin: 0px auto;
+}
+.table2 > table{
+  width: 100%;
+  text-align: center;
+}
+
+
+/*오른쪽*/
+
+.right{
+  width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.vl{
+  width: 100%;
+}
+
+.date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.vacationRequest{
+  text-align: right;
+}
+
+.vacationRequest > button{
+  background-color: forestgreen;
+  color:white;
+}
+
+/*휴가 신청 전체 목록*/
+
+.list1 > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list2 > div{
+  display: flex;
+  justify-content: space-between;
+}
