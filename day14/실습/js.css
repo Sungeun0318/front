@@ -1,0 +1,85 @@
+
+#wrap{
+    margin: 0 auto;
+    padding: 50px;
+    width: 950px;
+    box-shadow: 0 10px 10px #eeeeee;
+    border-radius: 7px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+#header > input, #header > select{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+}
+
+
+#header > button{
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 255, 0.794);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+#content{
+    width: 950px;
+    margin-top: 20px;
+    
+}
+
+#content > thead{
+    background-color: #eeeeee;
+    border: none;
+    
+   
+}
+
+#content > tbody{
+    text-align: center;
+    
+}
+
+#content > tbody > tr > td{
+    border-bottom: 1px solid #eeeeee;
+}
+
+#content > tbody > tr > .v{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.558);
+}
+
+#content > tbody > tr > td > button{
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    color: blue;
+    font-weight: bold;
+    background-color: rgba(0, 0, 255, 0.172);
+}
+#content > tbody > tr > td > .q{
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+}
+
+img{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.A > th{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+   
+}
+

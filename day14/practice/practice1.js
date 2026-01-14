@@ -51,8 +51,8 @@ function func1() {
 
     // 4. 즉시 출력 반영
     func2();
-
 }
+
 // 3-2] 출력함수
 function func2() { /* console.log("func2 exe") */
     // 1. 어디에 : tbody
@@ -70,7 +70,6 @@ function func2() { /* console.log("func2 exe") */
 
                 </tr>`
     }
-
     // 3. 출력 : 구성된 html 출력 한다.
     body1.innerHTML = 무엇을;
 
