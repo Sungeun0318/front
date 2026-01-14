@@ -23,7 +23,7 @@
           <button onclick="teamAdd()">추가</button>
          </div>
          <div class="left-bottom">
-          <table>
+          <table class="tab">
             <thead class="title">
               <tr><th>부서명</th><th>관리</th></tr>
             </thead>
@@ -31,6 +31,7 @@
               <tr><td>개발팀</td><td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td></tr>
               <tr><td>디자인팀</td><td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td></tr>
               <tr><td>기획팀</td><td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td></tr>
+              
             </tbody>
           </table>
          </div>
@@ -51,7 +52,7 @@
             <div class="Department">
               <li>부서</li>
               <select class="e3"> 
-                <option>부서를 선택하세요</option>
+                <option value="disabled">부서를 선택하세요</option>
                 <option value="1">개발팀</option>
                 <option value="2">디자인팀</option>
                 <option value="3">기획팀</option>
@@ -68,7 +69,7 @@
           <div class="center-bottom">
             <h3>사원 전체 목록</h3>
             <div class="table2">
-            <table>
+            <table class="tab">
               <thead>
                 <tr>
                   <th>사진</th>
@@ -103,15 +104,17 @@
               </tbody>
             </table>
             </div>
+            </div>
           </div>
-        </div>
+        
+    
         <div class="right">
           <div class="right-top">
             <h3>사원 휴가 신청</h3>
             <div class="EmployeeName">
               <li>신청 사원</li>
               <select class="v1"> 
-                <option>휴가 신청 사원을 선택하세요</option>
+                <option value="disabled">휴가 신청 사원을 선택하세요</option>
                 <option value="1">김민준</option>
                 <option value="2">이서연</option>
                 <option value="3">박도윤</option>
@@ -129,8 +132,10 @@
             </div>
             <div class="reason">
               <li>휴가 사유</li>
+              <li>휴가 사유</li>
               <input class="v4" type="text" placeholder="예: 여름휴가" />
             </div>
+            <div class="vacationRequest">
             <div class="vacationRequest">
               <button onclick="vacationAdd()">신청</button>
             </div>
@@ -161,6 +166,7 @@
     </div>
 
   </div>
+
 
 
   <script src='practice9.js'></script>

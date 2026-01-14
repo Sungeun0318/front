@@ -203,7 +203,20 @@ function employeeAdd() {
     const imageDom = document.querySelector(".e4");
     const image = imageDom.files[0];
 
+
+    if( team == "disabled"){
+        alert("부서를 선택하세요"); 
+        return;
+    } 
+
+    if(name == "" || position == ""){
+        alert("이름과 직급은 필수 입력입니다.");
+        return;
+    }
+
     ecode += 1;
+
+
 
     const obj = { "ecode": ecode, "image": image == undefined ? "https://placehold.co/100x100" : URL.createObjectURL(image), "name": name, "tcode": team, "position": position };
     employeeAry.push(obj);
@@ -224,6 +237,22 @@ function vacationAdd() {
 
     const reasonDom = document.querySelector(".v4");
     const reason = reasonDom.value;
+
+    if( employee == "disabled"){
+        alert("휴가 신청 사원을 선택하세요"); 
+        return;
+    } 
+
+    if(sdate == "" || edate == ""){
+        alert("날짜를 선택하세요");
+        return;
+    }
+
+    if(reason == "" ){
+        alert("사유를 작성하세요");
+        return;
+    }
+
 
     vcode += 1;
 
