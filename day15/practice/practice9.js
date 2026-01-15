@@ -1,3 +1,5 @@
+// [메모리 설계]
+
 const teamAry = [
     { "tcode": 1, "department": "개발팀" },
     { "tcode": 2, "department": "디자인팀" },
@@ -110,6 +112,7 @@ function teamDelete(tcode) {
             break;
         }
     }
+    teamSelectPrint();
 }
 
 // [2-2]
@@ -118,9 +121,11 @@ function employeeDelete(ecode) {
         if (ecode == employeeAry[index].ecode) {
             employeeAry.splice(index, 1);
             employeePrint();
+            
             break;
         }
     }
+    employeeSelectPrint()
 }
 
 // [2-3]
@@ -129,11 +134,12 @@ function vacationDelete(vcode) {
         if (vcode == vacationAry[index].vcode) {
             vacationAry.splice(index, 1);
             vacationPrint();
+            
             break;
         }
     }
+    employeeSelectPrint()
 }
-
 
 
 // [3] 수정
@@ -145,22 +151,24 @@ function teamUpdate(tcode) {
             const newName = prompt("수정할 부서명 : ");
             teamAry[index].department = newName;
             teamPrint();
+            teamSelectPrint();
             return;
         }
     }
+    
 }
 
 // [3-2]
 function employeeUpdate(ecode) {
-    for (let index = 0; index <= employeeAry.length - 1; index++) { // 1. 수정할 pcode의 인덱스를 배열에서 찾는다. <순회>
-        if (ecode == employeeAry[index].ecode) { // 2. 수정 할 코드와 index번째 제품(객체) 와 같으면
+    for (let index = 0; index <= employeeAry.length - 1; index++) {
+        if (ecode == employeeAry[index].ecode) {
             const newName = prompt("수정할 이름 : ");
             const newPosition = prompt("수정할 직책 : ");
             employeeAry[index].name = newName;
             employeeAry[index].position = newPosition;
             employeePrint();
-            // ***** 수정 성공시 [즉시] 화면 새로고침/렌더링 *****
-            return
+            employeeSelectPrint()
+            return;
         }
     }
 }
@@ -186,9 +194,11 @@ function teamAdd() {
     teamPrint();
 
     tcode += 1;
+    teamSelectPrint();
+    
 }
 
-// [4-2]
+// [4-2]    
 function employeeAdd() {
 
     const nameDom = document.querySelector(".e1");
@@ -204,12 +214,12 @@ function employeeAdd() {
     const image = imageDom.files[0];
 
 
-    if( team == "disabled"){
-        alert("부서를 선택하세요"); 
+    if (team == "disabled") {
+        alert("부서를 선택하세요");
         return;
-    } 
+    }
 
-    if(name == "" || position == ""){
+    if (name == "" || position == "") {
         alert("이름과 직급은 필수 입력입니다.");
         return;
     }
@@ -221,13 +231,15 @@ function employeeAdd() {
     const obj = { "ecode": ecode, "image": image == undefined ? "https://placehold.co/100x100" : URL.createObjectURL(image), "name": name, "tcode": team, "position": position };
     employeeAry.push(obj);
     employeePrint();
+    employeeSelectPrint()
 
 }
+
 // [4-3]
 function vacationAdd() {
 
     const employeeDom = document.querySelector(".v1");
-    const employee = employeeDom.value;                                                                                                                                                         
+    const employee = employeeDom.value;
 
     const sdateDom = document.querySelector(".v2");
     const sdate = sdateDom.value;
@@ -238,17 +250,17 @@ function vacationAdd() {
     const reasonDom = document.querySelector(".v4");
     const reason = reasonDom.value;
 
-    if( employee == "disabled"){
-        alert("휴가 신청 사원을 선택하세요"); 
+    if (employee == "disabled") {
+        alert("휴가 신청 사원을 선택하세요");
         return;
-    } 
+    }
 
-    if(sdate == "" || edate == ""){
+    if (sdate == "" || edate == "") {
         alert("날짜를 선택하세요");
         return;
     }
 
-    if(reason == "" ){
+    if (reason == "") {
         alert("사유를 작성하세요");
         return;
     }
@@ -259,11 +271,32 @@ function vacationAdd() {
     const obj = { "vcode": vcode, "ecode": employee, "sdate": sdate, "edate": edate, "reason": reason };
     vacationAry.push(obj);
     vacationPrint();
-}                       
+    employeeSelectPrint()
+}
 
 
+// + select 현재 존재하는 부서명만 출력 +
+function teamSelectPrint() {
+    const T = document.querySelector(".e3");
 
+    let html = `<option value="disabled">부서를 선택하세요</option>`;
+    for (let index = 0; index <= teamAry.length - 1; index++) {
+        const team = teamAry[index];
+        html += `<option value="${team.tcode}">${team.department}</option>`;
+    }
+    T.innerHTML = html;
+}
 
+// + select 현재 존재하는 사원명만 출력 +
+function employeeSelectPrint() {
+    const E = document.querySelector(".v1");
 
+    let html = `<option value="disabled">휴가 신청 사원을 선택하세요</option>`;
+    for (let index = 0; index <= employeeAry.length - 1; index++) {
+        const employee = employeeAry[index];
+        html += `<option value="${employee.ecode}">${employee.name}</option>`;
+    }
+    E.innerHTML = html;
+}
 
 
