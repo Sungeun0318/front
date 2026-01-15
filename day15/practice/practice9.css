@@ -35,7 +35,8 @@ li{ list-style-type : none; }
   border-radius: 5px;
   width: 220px;
   padding: 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid rgb(201, 195, 195);
+  
 
   
 }
@@ -53,7 +54,7 @@ li{ list-style-type : none; }
 #부서{
   width: 200px;
   text-align: left;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom : 1px solid #f1f5f9;
   padding-left: 10px;
 }
 
@@ -79,15 +80,19 @@ li{ list-style-type : none; }
   width: 850px;
    border-radius: 10px;
    margin: 10px;
-   padding: 0px 20px;
+   padding: 30px 20px;
    text-align: left;
   background-color: white;
 }
 
+.center > h3 {
+  margin-bottom: 5px;
+}
 /* -----------------------------사원등록-----------------------------*/
 .center-top{
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
 }
 
 .center-top > div{
@@ -98,6 +103,8 @@ li{ list-style-type : none; }
   width: 340px;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid rgb(201, 195, 195);
+  background-color: #f1f5f9;
 }
 
 .center-center1{
@@ -113,20 +120,34 @@ li{ list-style-type : none; }
    width: 342px;
    padding: 10px;
    border-radius: 5px;
+   border: 1px solid rgb(201, 195, 195);
+   background-color: #f1f5f9;
+   
 }
 
 .center-center2{text-align: right;}
 
 .center-center2 > button{
-  background-color: blue;
+  background-color: #4f46e5;
   color: white;
   border-radius: 5px;
   padding: 8px 15px;
   border: 0px;
 }
 /* -------------------------------사원 전체 목록-----------------------*/
+#b > tr > td > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+} 
 
-.table2{margin: 0px auto;}
+.table2{
+  margin: 0px auto;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 5px;
+  padding-top: 15px;
+}
 
 .table2 > table{width: 100%;text-align: center;}
 
@@ -139,7 +160,10 @@ li{ list-style-type : none; }
   text-align: left;
   margin: 10px;
 }
-
+.right-top > h3{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 /* ----------------------------------사원 휴가 신청----------------------*/
 
 .EmployeeName{ border-top: 1px solid #f1f5f9;}
@@ -148,6 +172,8 @@ li{ list-style-type : none; }
   width: 315px;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid rgb(201, 195, 195);
+  background-color: #f1f5f9;
 }
 
 .date-start{
@@ -163,12 +189,16 @@ li{ list-style-type : none; }
 .date-start > input{
   border-radius: 5px;
   padding: 10px;
+  border: 1px solid rgb(201, 195, 195);
+  background-color: #f1f5f9;
 }
 
 .date-end > input{
    border-radius: 5px;
    padding: 10px;
    border: 1px solid #eeeeee;
+   border: 1px solid rgb(201, 195, 195);
+   background-color: #f1f5f9;
 }
 
 .date{
@@ -181,12 +211,14 @@ li{ list-style-type : none; }
   width: 315px;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid rgb(201, 195, 195);
+  background-color: #f1f5f9;
 }
 
 .vacationRequest{text-align: right;}
 
 .vacationRequest > button{
-  background-color: green;
+  background-color: #0d9488;
   color: white;
   border-radius: 5px;
   padding: 8px 15px;
@@ -251,13 +283,3 @@ li{ list-style-type : none; }
 tbody{background-color: white;}
 
 td{border-bottom: 1px solid #f1f5f9;}
-
-
-
-
-
-/* #content > tbody img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-} */

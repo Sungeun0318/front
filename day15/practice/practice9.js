@@ -33,9 +33,9 @@ function teamPrint() {
 
 
         html += `<tr>
-                    <td>${team.department}</td>
-                    <td><button onclick="teamUpdate(${team.tcode})">수정</button>
-                        <button onclick="teamDelete(${team.tcode})">삭제</button>
+                    <td id="부서">${team.department}</td>
+                    <td><button class="reBth" onclick="teamUpdate(${team.tcode})">수정</button>
+                        <button class="removeBth" onclick="teamDelete(${team.tcode})">삭제</button>
                     </td>
                 </tr>`
     }
@@ -63,8 +63,8 @@ function employeePrint() {
                     <td>${department}</td>
                     <td>${employee.position}</td>
                     <td>
-                        <button onclick="employeeUpdate(${employee.ecode})">수정</button>
-                        <button onclick="employeeDelete(${employee.ecode})">삭제</button>
+                        <button class="reBth" onclick="employeeUpdate(${employee.ecode})">수정</button>
+                        <button class="removeBth" onclick="employeeDelete(${employee.ecode})">삭제</button>
                     </td>
                 </tr>`
     }
@@ -121,7 +121,7 @@ function employeeDelete(ecode) {
         if (ecode == employeeAry[index].ecode) {
             employeeAry.splice(index, 1);
             employeePrint();
-            
+
             break;
         }
     }
@@ -134,7 +134,7 @@ function vacationDelete(vcode) {
         if (vcode == vacationAry[index].vcode) {
             vacationAry.splice(index, 1);
             vacationPrint();
-            
+
             break;
         }
     }
@@ -155,7 +155,7 @@ function teamUpdate(tcode) {
             return;
         }
     }
-    
+
 }
 
 // [3-2]
@@ -195,7 +195,7 @@ function teamAdd() {
 
     tcode += 1;
     teamSelectPrint();
-    
+
 }
 
 // [4-2]    
@@ -298,5 +298,3 @@ function employeeSelectPrint() {
     }
     E.innerHTML = html;
 }
-
-
